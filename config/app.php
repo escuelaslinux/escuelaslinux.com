@@ -189,6 +189,12 @@ return [
         Cviebrock\EloquentSluggable\ServiceProvider::class,
         // Media Library https://github.com/spatie/laravel-medialibrary
         Spatie\MediaLibrary\MediaLibraryServiceProvider::class,
+        // JWT
+        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+        // Socialité
+        Laravel\Socialite\SocialiteServiceProvider::class,
+        App\Providers\ActivityServiceProvider::class,
+
     ],
 
     /*
@@ -238,7 +244,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Hashids' => Vinkla\Hashids\Facades\Hashids::class,
-
+        'JWTAuth' => 'Tymon\JWTAuth\Facades\JWTAuth',
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
     ],
 
 ];

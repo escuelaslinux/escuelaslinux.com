@@ -10,8 +10,10 @@
         "cyvelnet/laravel5-fractal": "^2.0",
         "erusev/parsedown": "^1.6",
         "laravel/framework": "5.4.*",
+        "laravel/socialite": "^3.0",
         "laravel/tinker": "~1.0",
         "spatie/laravel-medialibrary": "^5.0.0",
+        "tymon/jwt-auth": "^0.5.11",
         "vinkla/hashids": "^3.1",
         "yab/laracogs": "^2.2"
     },

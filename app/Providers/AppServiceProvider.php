@@ -23,6 +23,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+      $loader = \Illuminate\Foundation\AliasLoader::getInstance();
+
+      $loader->alias('Notifications', \App\Facades\Notifications::class);
+
+      $this->app->singleton('NotificationService', function ($app) {
+            return app(\App\Services\NotificationService::class);
+      });
+
+
     }
 }
